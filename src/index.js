@@ -1,10 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './pages/App';
+import  Routes  from './Routes'
+import DolarProvider from './Contexts/DolarContext'
+import './styles/global.css';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DolarProvider>
+      <Routes />
+    </DolarProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
